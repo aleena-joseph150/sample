@@ -1,8 +1,10 @@
-# sample
-Sample work 
-In this work there are 2 pages 
-one is for adding students details such as name,marks etc.
-other page displays the details along with total percentage of marks.
+# sample work
+Student Details
+This is a sample work which contains 2 Pages.
+One is a user-friendly interface for adding student details
+Such as their name,dob,marks of different subjects etc.
+Other page will display all the details added by the student
+and also calculates the total percentage of marks obtained by the student.
 
 Add Details Page
 
