@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+
+        #ab{
+            margin-top:60px;
+            height:100px;
+           width:300px;
+            margin-left:550px;
+           color:black;
+}
+  .btn{
+    width:50%;
+    margin:10px 0px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding:5px 29px;
+    height:30px;
+    text-transform: uppercase;
+    color:var(--white-color);
+    background-color: red;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+#a{
+ margin-left:10px;
+}
+#abb{
+color:red;
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table align="center" id="ab">
+
+
+<form method="post" id="ac">{% csrf_token %}
+    <h1 align="center" style="margin-top:100px;">ADD STUDENT DETAILS</h1>
+     <div>
+        {% for i in messages %}
+        <h4 align="center" id="abb">{{i}}</h4>
+        {% endfor %}
+    </div>
+    <tr><td><label>Student Name</label></td></tr>
+    <tr><td><input type="text" name="sname" ></td></tr>
+    <tr><td><label>Date of Birth</label></td></tr>
+  <tr> <td> <input type="date" name="dob"></td></tr>
+    <tr><td><label>Marks Details</label></td></tr>
+    <tr><td><label>Physics</label></td></tr>
+    <tr> <td> <input type="number" name="phy" placeholder="out of 100"></td></tr>
+    <tr><td><label>Chemistry</label></td></tr>
+    <tr> <td> <input type="number" name="chem" placeholder="out of 100"></td></tr>
+    <tr><td><label>Maths</label></td></tr>
+    <tr> <td> <input type="number" name="maths" placeholder="out of 100"></td></tr>
+    <tr><td><label>Computer Science</label></td></tr>
+    <tr> <td> <input type="number" name="cs" placeholder="out of 100"></td></tr>
+
+   <tr><td>  <button type="submit" class="btn">ADD</button></td></tr>
+</form>
+    </div>
+    </table>
+
+</body>
+</html>
